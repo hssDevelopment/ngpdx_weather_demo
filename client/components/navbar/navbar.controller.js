@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stockDemoAppApp')
+angular.module('weatherDemoApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',

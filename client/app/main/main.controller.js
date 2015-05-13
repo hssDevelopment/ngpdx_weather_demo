@@ -1,11 +1,13 @@
 'use strict';
 
-angular.module('stockDemoAppApp')
+angular.module('weatherDemoApp')
   .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
+    $scope.weatherArray = [];
+    $http.get('/api/weather/la').success(function(data) {
+        for(var i = 0; i < 8; i++){
+            $scope.weatherArray.push(data);
+        }
     });
 
   });
