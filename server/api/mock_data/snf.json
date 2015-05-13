@@ -1,0 +1,93 @@
+{
+    "response": {
+        "version":"0.1",
+        "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+        "features": {
+            "conditions": 1
+        }
+    }
+    ,	"current_observation": {
+    "image": {
+        "url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+        "title":"Weather Underground",
+        "link":"http://www.wunderground.com"
+    },
+    "display_location": {
+        "full":"Los Angeles, CA",
+        "city":"Los Angeles",
+        "state":"CA",
+        "state_name":"California",
+        "country":"US",
+        "country_iso3166":"US",
+        "zip":"90001",
+        "magic":"1",
+        "wmo":"99999",
+        "latitude":"33.97457886",
+        "longitude":"-118.24745941",
+        "elevation":"50.00000000"
+    },
+    "observation_location": {
+        "full":"Natural History Museum, Los Angeles, California",
+        "city":"Natural History Museum, Los Angeles",
+        "state":"California",
+        "country":"US",
+        "country_iso3166":"US",
+        "latitude":"34.017078",
+        "longitude":"-118.288681",
+        "elevation":"207 ft"
+    },
+    "estimated": {
+    },
+    "station_id":"KCALOSAN107",
+    "observation_time":"Last Updated on May 12, 6:30 PM PDT",
+    "observation_time_rfc822":"Tue, 12 May 2015 18:30:20 -0700",
+    "observation_epoch":"1431480620",
+    "local_time_rfc822":"Tue, 12 May 2015 18:30:59 -0700",
+    "local_epoch":"1431480659",
+    "local_tz_short":"PDT",
+    "local_tz_long":"America/Los_Angeles",
+    "local_tz_offset":"-0700",
+    "weather":"Clear",
+    "temperature_string":"70.6 F (21.4 C)",
+    "temp_f":70.6,
+    "temp_c":21.4,
+    "relative_humidity":"52%",
+    "wind_string":"From the NNE at 2.3 MPH Gusting to 3.0 MPH",
+    "wind_dir":"NNE",
+    "wind_degrees":22,
+    "wind_mph":2.3,
+    "wind_gust_mph":"3.0",
+    "wind_kph":3.7,
+    "wind_gust_kph":"4.8",
+    "pressure_mb":"1011",
+    "pressure_in":"29.86",
+    "pressure_trend":"0",
+    "dewpoint_string":"52 F (11 C)",
+    "dewpoint_f":52,
+    "dewpoint_c":11,
+    "heat_index_string":"NA",
+    "heat_index_f":"NA",
+    "heat_index_c":"NA",
+    "windchill_string":"NA",
+    "windchill_f":"NA",
+    "windchill_c":"NA",
+    "feelslike_string":"70.6 F (21.4 C)",
+    "feelslike_f":"70.6",
+    "feelslike_c":"21.4",
+    "visibility_mi":"10.0",
+    "visibility_km":"16.1",
+    "solarradiation":"--",
+    "UV":"2","precip_1hr_string":"0.00 in ( 0 mm)",
+    "precip_1hr_in":"0.00",
+    "precip_1hr_metric":" 0",
+    "precip_today_string":"0.00 in (0 mm)",
+    "precip_today_in":"0.00",
+    "precip_today_metric":"0",
+    "icon":"clear",
+    "icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+    "forecast_url":"http://www.wunderground.com/US/CA/Los_Angeles.html",
+    "history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KCALOSAN107",
+    "ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=34.017078,-118.288681",
+    "nowcast":""
+}
+}
