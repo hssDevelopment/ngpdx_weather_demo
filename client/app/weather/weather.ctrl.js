@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('weatherDemoApp')
-  .controller('MainCtrl', function ($scope, $http) {
-
-    $scope.weatherArray = [];
+  .controller('WeatherCtrl', function ($http) {
+    var vm = this;
+    vm.weatherArray = [];
     $http.get('/api/weather/la').success(function(data) {
         for(var i = 0; i < 8; i++){
-            $scope.weatherArray.push(data);
+            vm.weatherArray.push(data);
         }
     });
 

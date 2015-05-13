@@ -5,7 +5,8 @@ angular.module('weatherDemoApp')
     $stateProvider
       .state('main', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'app/weather/weather.html',
+        controller: 'WeatherCtrl',
+        controllerAs: 'WeatherCtrl'
       });
   });
