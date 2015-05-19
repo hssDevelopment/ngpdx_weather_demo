@@ -1,30 +1,18 @@
 'use strict';
 
 angular.module('weatherDemoApp')
-    .controller('WeatherCtrl', function (weatherApiService) {
-        var CITY_ENDPOINTS = {
-            la:  'la',
-            snf: 'snf',
-            ny:  'ny',
-            bos: 'bos',
-            por: 'por',
-            sea: 'sea',
-            hou: 'hou',
-            chi: 'chi'
-        };
-
+    .controller('WeatherCtrl', function (weatherApiService, la, snf, ny,
+                                         bos, por, sea, hou, chi) {
         var vm = this;
         vm.weatherArray = [];
-
-        function initializeWeatherData() {
-            angular.forEach(CITY_ENDPOINTS, function (cityAbbreviation) {
-                weatherApiService.getCurrentWeather(cityAbbreviation).then(function(weatherData){
-                    vm.weatherArray.push(weatherData);
-                });
-            });
-        }
-
-        initializeWeatherData();
+        vm.weatherArray.push(la);
+        vm.weatherArray.push(snf);
+        vm.weatherArray.push(ny);
+        vm.weatherArray.push(bos);
+        vm.weatherArray.push(por);
+        vm.weatherArray.push(sea);
+        vm.weatherArray.push(hou);
+        vm.weatherArray.push(chi);
     });
 
 

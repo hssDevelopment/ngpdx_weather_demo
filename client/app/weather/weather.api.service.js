@@ -23,7 +23,19 @@ angular.module('weatherDemoApp')
                     deferred.resolve(currentWeatherData);
                 })
                 .error(function(){
-                    deferred.reject();
+                    //In this case, the route will not resolve
+                    //without a successful promise - resolve an
+                    //empty object or a helpful error message that
+                    //will be displayed
+
+                    deferred.resolve({
+                        location: '',
+                        condition: '',
+                        temperature: '',
+                        humidity: '',
+                        wind: '',
+                        icon: ''
+                    });
                 });
 
             return deferred.promise;
