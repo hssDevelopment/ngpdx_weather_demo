@@ -3,12 +3,12 @@
   <div class="row">
     <div class="col-lg-3 weather-box-wrapper" ng-repeat="weather in WeatherCtrl.weatherArray track by $index">
         <div class="weather-border-box">
-            <h3 class="text-center">{{weather.current_observation.display_location.full}}</h3>
-            <div>Current Condition: {{weather.current_observation.weather}}</div>
-            <div>Current Temperature: {{weather.current_observation.temperature_string}}</div>
-            <div>Current Humidity: {{weather.current_observation.relative_humidity}}</div>
-            <div>Wind Gust: {{weather.current_observation.wind_gust_mph}} m.p.h</div>
-            <div class="text-center"><img src="{{weather.current_observation.icon_url}}" /></div>
+            <h3 class="text-center">{{weather.location}}</h3>
+            <div>Current Condition: {{weather.condition}}</div>
+            <div>Current Temperature: {{weather.temperature}}</div>
+            <div>Current Humidity: {{weather.humidity}}</div>
+            <div>Wind Gust: {{weather.wind}} m.p.h</div>
+            <div class="text-center"><img src="{{weather.icon}}" /></div>
         </div>
     </div>
   </div>
