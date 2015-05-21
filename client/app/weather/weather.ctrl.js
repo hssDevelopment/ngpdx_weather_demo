@@ -3,7 +3,7 @@
 angular.module('weatherDemoApp')
     .controller('WeatherCtrl', function (weatherData) {
         var vm = this;
-        vm.weatherArray = weatherData
+        vm.weatherArray = weatherData;
     });
 
 

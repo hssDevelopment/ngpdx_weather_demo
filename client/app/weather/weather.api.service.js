@@ -43,6 +43,6 @@ angular.module('weatherDemoApp')
 
         return{
             getCurrentWeather: getCurrentWeather
-        }
+        };
 
     });

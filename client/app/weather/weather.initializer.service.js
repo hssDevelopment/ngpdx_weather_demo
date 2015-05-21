@@ -1,6 +1,8 @@
 /**
  * Created by hensleym on 5/18/15.
  */
+'use strict';
+
 angular.module('weatherDemoApp')
     .service('weatherInitializerService', function(weatherApiService, $q){
         function initialize(){
@@ -21,6 +23,6 @@ angular.module('weatherDemoApp')
 
         return{
             initialize: initialize
-        }
+        };
 
     });
